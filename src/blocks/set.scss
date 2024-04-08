@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 *,
 *::before,
 *::after {
@@ -130,14 +132,29 @@ input[type="number"] {
   margin: 0 auto;
 }
 
-@media (min-width: 120em) {
-  html {
-    font-size: 1.5625vw;
-    -webkit-text-size-adjust: none;
-  }
+.main__desc {
+  padding: 9.6rem 0;
+  @include font(600, 2.4rem, 140%);
+  font-style: italic;
+  text-align: center;
+}
 
+.title {
+  @include font(700, 3.6rem, auto);
+}
+
+@media (min-width: 120em) {
   .container {
     width: 1400px;
+  }
+
+  .main__desc {
+    padding: 96px 0;
+    @include font(600, 24px, 140%);
+  }
+
+  .title {
+    @include font(700, 36px, auto);
   }
 }
 
@@ -150,5 +167,15 @@ input[type="number"] {
   .container {
     padding: 0 3.2rem;
     width: 100%;
+  }
+
+  .main__desc {
+    padding: 13rem 0;
+    padding-bottom: 5.5rem;
+    @include font(600, 3.2rem, 140%);
+  }
+
+  .title {
+    @include font(700, 4.9rem, auto);
   }
 }

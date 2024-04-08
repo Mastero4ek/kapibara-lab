@@ -16,7 +16,7 @@
         position: absolute;
         width: 36.7rem;
         height: auto;
-        bottom: 0;
+        bottom: -.23rem;
         right: 12.5rem;
     }
 
@@ -53,6 +53,7 @@
         &__image {
             width: 367px;
             right: 125px;
+            bottom: -2.3px;
         }
 
         &__title {
