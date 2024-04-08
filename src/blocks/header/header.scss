@@ -71,6 +71,7 @@
                 width: 4.2rem;
                 height: 4.2rem;
                 stroke: #737BE1;
+                transition: all .15s ease-in;
             }
         }
 
@@ -160,6 +161,22 @@
 
                     span {
                         color: #4F58C9;
+                    }
+                }
+            }
+        }
+
+        &__contacts {
+            a:hover {
+                .header__contacts-icon {
+                    svg {
+                        stroke: lighten($color: #737BE1, $amount: 5);
+                    }
+                }
+
+                .header__contacts-content {
+                    b {
+                        color: #737BE1;
                     }
                 }
             }
