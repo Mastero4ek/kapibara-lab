@@ -20,6 +20,12 @@
         transition: all .15s ease-in;
         stroke: #FFFFFF;
     }
+
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        background-color: #4C4C4C;
+    }
 }
 
 @media (min-width:120em) {

@@ -45,12 +45,17 @@
                 &:focus {
                     border: .2rem solid #737BE1;
                 }
-            }
 
-            &--error {
-                border: .2rem solid #E17373;
+                &:disabled {
+                    pointer-events: none;
+                    opacity: 0.5;
+                }
             }
         }
+    }
+
+    .input--error {
+        border: .2rem solid #E17373;
     }
 }
 
@@ -87,11 +92,11 @@
                         border: 2px solid #737BE1;
                     }
                 }
-
-                &--error {
-                    border: 2px solid #E17373;
-                }
             }
+        }
+
+        .input--error {
+            border: 2px solid #E17373;
         }
     }
 }

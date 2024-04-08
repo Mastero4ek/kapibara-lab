@@ -28,22 +28,22 @@
 					<span>Современные методики диагностики</span>
 				</div>
 
-				<nav class="header__nav">
+				<nav id="nav" class="header__nav">
 					<ul>
 						<li>
-							<a class="header__nav-link header__nav-link--active" href="#laboratory">
+							<a id="laboratory-link" class="header__nav-link" href="#laboratory">
 								<span>Лаборатория</span>
 							</a>
 						</li>
 
 						<li>
-							<a class="header__nav-link" href="#gallery">
+							<a id="gallery-link" class="header__nav-link" href="#gallery">
 								<span>Галерея</span>
 							</a>
 						</li>
 
 						<li>
-							<a class="header__nav-link" href="#form">
+							<a id="form-link" class="header__nav-link" href="#form">
 								<span>Оставить заявку</span>
 							</a>
 						</li>
@@ -93,7 +93,7 @@
 				надежный партнер в обеспечении качественной и точной диагностики! </p>
 		</div>
 
-		<section class="laboratory">
+		<section id="laboratory" class="laboratory">
 			<div class="container">
 				<div class="laboratory__wrapper">
 					<div class="laboratory__content">
@@ -117,19 +117,19 @@
 							</span>
 						</p>
 
-						<button class="button laboratory__btn wow animate__animated animate__fadeIn"
-							data-wow-duration="2s">
+						<a href="#form" id="laboratory-btn"
+							class="button laboratory__btn wow animate__animated animate__fadeIn" data-wow-duration="2s">
 							<span>Оставить заявку</span>
 							<svg class="icon">
 								<use xlink:href="./img/icons.svg#arrow-right"></use>
 							</svg>
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="gallery">
+		<section id="gallery" class="gallery">
 			<div class="container">
 				<div class="gallery__Wrapper">
 					<h3 class="title gallery__title">Галерея</h3>
@@ -167,7 +167,7 @@
 			</div>
 		</section>
 
-		<section class="form wow animate__animated animate__fadeInUpBig" data-wow-duration="1s">
+		<section id="form" class="form wow animate__animated animate__fadeInUp">
 			<div class="container">
 				<div class="form__wrapper">
 					<div class="form__content">
@@ -177,7 +177,7 @@
 							результаты в кратчайшие сроки!</p>
 					</div>
 
-					<form class="form__controls">
+					<form id="form-controls" name="form" class="form__controls">
 						<div class="form__controls-item">
 							<input name="second-name" type="text" placeholder="Фамилия">
 						</div>
@@ -190,7 +190,7 @@
 							<input name="surname" type="text" placeholder="Отчество">
 						</div>
 
-						<button class="button form__btn">
+						<button class="button form__btn" type="submit">
 							<span>Отправить</span>
 							<svg class="icon">
 								<use xlink:href="./img/icons.svg#checkmark"></use>
@@ -213,6 +213,22 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="overlay" class="overlay">
+		<div class="popup">
+			<div class="container">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<div class="popup__image">
+							<img src="./img/popup/checkmark.svg" alt="checkmark">
+						</div>
+
+						<span>Спасибо за предоставленную информацию,мы свяжемся с вами в ближайшее время.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

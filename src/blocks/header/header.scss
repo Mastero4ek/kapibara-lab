@@ -41,6 +41,7 @@
             transition: all .15s ease-in;
 
             span {
+                pointer-events: none;
                 transition: all .15s ease-in;
                 color: #000000;
             }
